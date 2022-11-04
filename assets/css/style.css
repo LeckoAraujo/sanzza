@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Krub&display=swap');
+
+:root{
+    --primary-color: #B6860F;
+    --second-color: #00403A;
+    --white: #FFF;
+    --black: #000;
+    --gray: #EDEDED;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color);
+}
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: var(--primary-color);
+border-radius: 20px;
+}
+
+
+/*
+Geral
+*/
+.button-primary{
+    font-family: 'Krub', sans-serif;
+    background-color: none;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 12px 10px;
+    transition: all 0.5s;
+}
+
+.button-primary:hover{
+    border-color: var(--second-color);
+    background-color: var(--second-color);
+}
+
+a.button-primary, a.button-reverse{
+    color: var(--white);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 6px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.button-reverse{
+    font-family: 'Krub', sans-serif;
+    background-color: var(--second-color);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 12px 10px;
+    transition: all 0.5s;
+}
+
+.button-reverse:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/*
+Header and Menu
+*/
+header{
+    padding: 75px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.menu-closed, .header-menu-open{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    gap: 15px;
+    width: 92.11px;
+}
+
+.title-menu {
+    opacity: 0;
+    font-family: 'Krub', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 6px;
+    transition: all 0.5s;
+}
+
+.img-menu, .title-menu{
+    cursor: pointer;
+}
+
+.img-menu:hover + .title-menu, .title-menu:hover {
+    opacity: 1;
+}
+
+.menu-expanded{
+    font-family: 'Cormorant', serif;
+    color: var(--white);
+    background-color: var(--second-color);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
+    display: none;
+}
+
+.header-menu-open{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.menu-principal{
+    width: 90%;
+    font-family: 'Cormorant', serif;
+    font-size: 45px;
+    letter-spacing: 4.5px;
+    line-height: 55px;
+    color: var(--white);
+    margin-top: 151px;
+    margin-bottom: 120px;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li{
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-principal ul li:hover p{
+    text-decoration: underline 1px solid var(--gray);
+    text-underline-offset: 15px;
+}
+
+.menu-principal ul li:hover p + .submenu{
+    opacity: 1;
+}
+
+.submenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:70px;
+    width: 70%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+ul.submenu li{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    margin-left: 0;
+    line-height: 20px;
+}
+
+ul.submenu li:hover{
+    text-shadow: 0 0 1px #FFF, 0 0 1px #FFF;
+}
+
+.search-lang-phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap:70px;
+}
+
+.search-lang-phone form{
+    flex: 1;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-lang-phone form input{
+    background-color: transparent;
+    box-shadow: none;
+    border-color: transparent;
+    outline: none;
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.search-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search-button img{
+    width: 18px;
+}
+.search-button:hover img{
+    text-shadow: 0 0 1px #FFF, 0 0 1px #FFF;
+}
+
+.language, .language ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.language ul{
+    gap:10px;
+}
+
+.language p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.language ul li a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.language ul li.active a{
+    text-shadow: 0 0 1px #FFF, 0 0 1px #FFF;
+}
+
+.language ul li:hover a{
+    text-decoration: underline 1px solid var(--gray);
+    text-underline-offset: 10px;
+}
+
+/*
+Section 1 - Carousel
+*/
+.carousel-1{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+.controls-carousel-1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:15px;
+    padding-right: 60px;
+    margin-bottom: 21px;
+}
+.control-left, .control-right{
+    cursor: pointer;
+    width: 60px;
+}
+.control-left img, .control-right img{
+    height: 20px;
+    position: relative;
+    margin: 0;
+    transition: all 0.5s;
+}
+.control-left:hover img{
+    margin-left: -10px;
+}
+.control-right:hover img{
+    margin-left: 10px;
+}
+
+.content-carousel-1 .slide h3, .content-carousel-1 .slide h1, .content-carousel-1 .slide a{
+    position: absolute;
+    z-index: 3;
+}
+
+.content-carousel-1 .slide img{
+    width: 90%;
+    position: absolute;
+    margin-left: 10%;
+    z-index: 1;
+}
