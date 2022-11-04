@@ -105,14 +105,24 @@
 
     <div class="content-carousel-1">
         <div class="slide" id="1">
-            <img src="assets/images/homepage/nicola-rossio-hotel-banner-1.jpg" alt="Hotel Nicola Rossio">
-            <h3>NO CORAÇÃO DA BAIXA LISBOETA</h3>
-            <h1>O REQUINTE DO ROSSIO</h1>
-            <a href="#" class="button-primary">DESCOBRIR</a>
+            <div class="text-carousel-1">
+                <p>NO CORAÇÃO DA BAIXA LISBOETA</p>
+                <h1>O REQUINTE <br> NO ROSSIO</h1>
+                <a href="#" class="button-primary">DESCOBRIR</a>
+            </div>
+            <div class="img-carousel-1-background">
+                <img src="assets/images/homepage/nicola-rossio-hotel-banner-1-hover.jpg" alt="Hotel Nicola Rossio">
+                <img class="img-filter"src="assets/images/homepage/nicola-rossio-hotel-banner-1.jpg" alt="Hotel Nicola Rossio">
+            </div>
         </div>
     </div>
 </section>
 <!-- Carousel -->
+
+<!-- Bem Vindo -->
+<section class="bem-vindo">
+</section>
+<!-- Bem Vindo -->
     
 </body>
 </html>

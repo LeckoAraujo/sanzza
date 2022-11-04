@@ -126,6 +126,7 @@ header{
     align-items: center;
     padding: 75px;
     display: none;
+    z-index: 999;
 }
 
 .header-menu-open{
@@ -269,6 +270,7 @@ Section 1 - Carousel
     display: flex;
     flex-direction: column;
 }
+
 .controls-carousel-1{
     width: 100%;
     display: flex;
@@ -295,14 +297,61 @@ Section 1 - Carousel
     margin-left: 10px;
 }
 
-.content-carousel-1 .slide h3, .content-carousel-1 .slide h1, .content-carousel-1 .slide a{
+.content-carousel-1{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 125px;
+    height: calc(100vh - 100px);
+}
+
+.content-carousel-1 .slide{
+    position: relative;
+    width: 90%;
+}
+
+.text-carousel-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap:20px;
     position: absolute;
     z-index: 3;
 }
 
-.content-carousel-1 .slide img{
-    width: 90%;
-    position: absolute;
-    margin-left: 10%;
+.carousel-1 p{
+    font-family: 'Krub', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 6px;
+    color: var(--white);
+    margin-top: 100px;
+}
+
+.carousel-1 h1{
+    font-family: 'Cormorant', serif;
+    font-size: 150px;
+    line-height: 140px;
+    color: var(--white);
+}
+
+.img-carousel-1-background{
+    width: 93%;
+    margin-left: 7%;
+    position: relative;
     z-index: 1;
+}
+.img-carousel-1-background img{
+    position: absolute;
+    opacity: 1;
+    transition: all 0.5s;
+    width: 100%;
+}
+.content-carousel-1 .slide:hover .img-carousel-1-background img.img-filter{
+    opacity: 0;
+}
+
+
+.bem-vindo{
+    margin-top: 262px;
 }
