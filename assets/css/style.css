@@ -97,6 +97,13 @@ a.button-second:hover{
     border: 1px solid var(--primary-color);
 }
 
+.mega-title{
+    font-family: 'Cormorant', serif;
+    font-size: 135px;
+    line-height: 130px;
+    color: var(--black);
+}
+
 .title-1{
     font-family: 'Cormorant', serif;
     font-size: 35px;
@@ -109,9 +116,14 @@ a.button-second:hover{
     line-height: 55px;
     color: var(--primary-color);
 }
-.texte-p{
+.text-p{
     font-family: 'Krub', sans-serif;
     font-size: 16px;
+}
+.text-citation{
+    font-family: 'Krub', sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
 }
 
 /*
@@ -394,7 +406,9 @@ Section 1 - Carousel
     opacity: 0;
 }
 
-
+/*
+Boas vindas
+*/
 .bem-vindo{
     margin-left: 100px;
     margin-right: 100px;
@@ -451,4 +465,60 @@ Section 1 - Carousel
 }
 .text-grid h2.title-2{
     margin-top: -40px;
+}
+
+/*
+Vista
+*/
+.vista{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    width: 87%;
+    margin-right: 13%;
+}
+.vista div{
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.vista div img{
+    position: absolute;
+    margin-top: -50px;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.vista div img.filter:hover{
+    opacity: 0;
+}
+.vista p{
+    margin-top: 70px;
+}
+
+/*
+Inspiração
+*/
+.inspiration{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 310px;
+    gap: 50px;
+}
+.inspiration .mega-title{
+    text-align: left;
+}
+
+.inspiration p{
+    width: 655px;
+}
+
+.inspiration img{
+    margin-top: -100px;
+    align-self: flex-end;
 }
