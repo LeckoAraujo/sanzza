@@ -121,6 +121,19 @@
 
 <!-- Bem Vindo -->
 <section class="bem-vindo">
+    <div class="grid-img-1">&nbsp;</div>
+    <div class="grid-text">
+        <div class="text-grid">
+            <h1 class="title-1">BEM-VINDO</h1>
+            <h2 class="title-2">AO NICOLA ROSSIO HOTEL</h2>
+            <p class="text-p">Sinta o verdadeiro espírito lisboeta no behotelisboa, um hotel de charme que ocupa um edifício do século XVIII integralmente reabilitado no centro histórico da capital portuguesa. Deixe-se conquistar pelo acolhimento atencioso com que brindamos os nossos hóspedes, pelo conforto e tranquilidade deste espaço único, próximo de tudo. A dois passos dos mais emblemáticos monumentos históricos, dos restaurantes mais trendy e da vibrante vida noturna, o behotelisboa é a escolha perfeita para descobrir os encantos desta cidade cosmopolita, cheia de história e tradição.</p>
+            <a class="button-second" href="#">DESCOBRIR</a>
+        </div>
+    </div>
+    <div class="grid-img-2">&nbsp;</div>
+    <div class="grid-img-3">
+        <img src="assets/images/homepage/nicola-rossio-hotel-excerto-1.jpg" alt="Texto da imagem que não consegui ler" width="343">
+    </div>
 </section>
 <!-- Bem Vindo -->
     

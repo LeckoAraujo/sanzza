@@ -57,6 +57,32 @@ a.button-primary, a.button-reverse{
     text-transform: none;
 }
 
+.button-second{
+    font-family: 'Krub', sans-serif;
+    background-color: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 12px 10px;
+    transition: all 0.5s;
+}
+
+.button-second:hover{
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+a.button-second{
+    color: var(--primary-color);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 6px;
+    text-decoration: none;
+    text-transform: none;
+}
+a.button-second:hover{
+    color: var(--white);
+}
+
 .button-reverse{
     font-family: 'Krub', sans-serif;
     background-color: var(--second-color);
@@ -69,6 +95,23 @@ a.button-primary, a.button-reverse{
 .button-reverse:hover{
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
+}
+
+.title-1{
+    font-family: 'Cormorant', serif;
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--primary-color);
+}
+.title-2{
+    font-family: 'Cormorant', serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--primary-color);
+}
+.texte-p{
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
 }
 
 /*
@@ -353,5 +396,59 @@ Section 1 - Carousel
 
 
 .bem-vindo{
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 262px;
+    display: grid;
+    row-gap: 50px;
+    column-gap: 150px;
+    grid-template-columns: 40% 40%;
+    grid-template-areas: 
+    "A B"
+    "A C"
+    "D C";
+}
+
+.grid-img-1{
+    cursor: pointer;
+    grid-area: A;
+    height: 920px;
+    background-image: url('../images/homepage/nicola-rossio-hotel-destaque-quartos-1.jpg');
+    transition: all 0.5s;
+}
+.grid-img-1:hover{
+    background-image: url('../images/homepage/nicola-rossio-hotel-destaque-quartos-1-hover.jpg');
+}
+.grid-img-2{
+    margin-top: 100px;
+    cursor: pointer;
+    grid-area: C;
+    height: 753px;
+    background-image: url('../images/homepage/nicola-rossio-hotel-bem-vindo-2.jpg');
+    transition: all 0.5s;
+}
+.grid-img-2:hover{
+    background-image: url('../images/homepage/nicola-rossio-hotel-bem-vindo-2-hover.jpg');
+}
+.grid-img-3{
+    grid-area: D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.grid-text{
+    grid-area: B;
+    margin-top: -30px;
+    padding-top: 50px;
+}
+.text-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+.text-grid h2.title-2{
+    margin-top: -40px;
 }
