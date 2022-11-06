@@ -178,6 +178,32 @@
     <img src="assets/images/homepage/nicola-rossio-hotel-excerto-2.jpg" alt="Outro texto que não consegui ler">
 </section>
 <!-- Inspiração -->
+
+<!-- Quartos -->
+<section class="quartos">
+    <h2 class="title-1">OS NOSSOS QUARTOS</h2>
+    
+    <div class="carousel-2">
+        
+        <div class="controls-carousel-2">
+            <div class="control-left">
+                <img src="assets/images/formas/seta-dourada-esquerda.png" alt="Seta esquerda" onclick="carousel2('prev')">
+            </div>
+            <div class="control-right">
+                <img src="assets/images/formas/seta-dourada-direita.png" alt="Seta direita" onclick="carousel2('next')">
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Quartos -->
+
+
+<!-- Conceito e Interiores -->
+<section class="conteito-interiores">
+    
+</section>
+<!-- Conceito e Interiores -->
     
 </body>
 </html>

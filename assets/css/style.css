@@ -529,3 +529,32 @@ Inspiração
     margin-top: -130px;
     align-self: flex-end;
 }
+
+/*
+Quartos
+*/
+.quartos{
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-2{
+    width: 100%;
+}
+
+.controls-carousel-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.controls-carousel-2 .control-left{
+    margin-left: 10%;
+}
+.controls-carousel-2 .control-right{
+    margin-right: 10%;
+}
