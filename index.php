@@ -96,18 +96,42 @@
 <section class="carousel-1">
     <div class="controls-carousel-1">
         <div class="control-left">
-            <img src="assets/images/formas/seta-esquerda.png" alt="Seta esquerda">
+            <img src="assets/images/formas/seta-esquerda.png" alt="Seta esquerda" onclick="carousel1('prev')">
         </div>
         <div class="control-right">
-            <img src="assets/images/formas/seta-direita.png" alt="Seta direita">
+            <img src="assets/images/formas/seta-direita.png" alt="Seta direita" onclick="carousel1('next')">
         </div>
     </div>
 
     <div class="content-carousel-1">
-        <div class="slide" id="1">
+        <div class="slide active" id="1">
             <div class="text-carousel-1">
                 <p>NO CORAÇÃO DA BAIXA LISBOETA</p>
                 <h1>O REQUINTE <br> NO ROSSIO</h1>
+                <a href="#" class="button-primary">DESCOBRIR</a>
+            </div>
+            <div class="img-carousel-1-background">
+                <img src="assets/images/homepage/nicola-rossio-hotel-banner-1-hover.jpg" alt="Hotel Nicola Rossio">
+                <img class="img-filter"src="assets/images/homepage/nicola-rossio-hotel-banner-1.jpg" alt="Hotel Nicola Rossio">
+            </div>
+        </div>
+
+        <div class="slide" id="2">
+            <div class="text-carousel-1">
+                <p>NO CORAÇÃO DA BAIXA LISBOETA</p>
+                <h1>O REQUINTE <br> NO ROSSIO 2</h1>
+                <a href="#" class="button-primary">DESCOBRIR</a>
+            </div>
+            <div class="img-carousel-1-background">
+                <img src="assets/images/homepage/nicola-rossio-hotel-banner-1-hover.jpg" alt="Hotel Nicola Rossio">
+                <img class="img-filter"src="assets/images/homepage/nicola-rossio-hotel-banner-1.jpg" alt="Hotel Nicola Rossio">
+            </div>
+        </div>
+
+        <div class="slide" id="3">
+            <div class="text-carousel-1">
+                <p>NO CORAÇÃO DA BAIXA LISBOETA</p>
+                <h1>O REQUINTE <br> NO ROSSIO 3</h1>
                 <a href="#" class="button-primary">DESCOBRIR</a>
             </div>
             <div class="img-carousel-1-background">

@@ -362,6 +362,12 @@ Section 1 - Carousel
 .content-carousel-1 .slide{
     position: relative;
     width: 90%;
+    display: none;
+    transition: all 0.5s;
+}
+
+.content-carousel-1 div.active{
+    display: flex;
 }
 
 .text-carousel-1 {
@@ -508,7 +514,8 @@ Inspiração
     align-items: center;
     position: relative;
     margin-top: 310px;
-    gap: 50px;
+    gap: 80px;
+    margin-bottom: 100px;
 }
 .inspiration .mega-title{
     text-align: left;
@@ -519,6 +526,6 @@ Inspiração
 }
 
 .inspiration img{
-    margin-top: -100px;
+    margin-top: -130px;
     align-self: flex-end;
 }
