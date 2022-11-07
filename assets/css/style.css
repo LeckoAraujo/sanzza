@@ -543,9 +543,27 @@ Quartos
 
 .carousel-2{
     width: 100%;
+    position: relative;
+}
+
+.carousel-2 .wrap{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 1150px;
+}
+
+.carousel-2 .wrap .content-carousel-2 .slide img{
+    width: 65vw;
+    max-height: 920px;
+}
+
+.content-carousel-2{
+    width: calc(100vw * 3);
 }
 
 .controls-carousel-2{
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;

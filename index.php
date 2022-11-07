@@ -181,9 +181,23 @@
 
 <!-- Quartos -->
 <section class="quartos">
-    <h2 class="title-1">OS NOSSOS QUARTOS</h2>
+    <h2 class="title-2">OS NOSSOS QUARTOS</h2>
     
     <div class="carousel-2">
+
+        <div class="wrap">
+            <div class="content-carousel-2">
+                <div class="slide active">
+                    <img src="assets/images/homepage/nicola-rossio-hotel-destaque-quartos-1-hover.jpg" alt="Foto quarto Standard">
+                    <img src="assets/images/homepage/nicola-rossio-hotel-destaque-quartos-1.jpg" alt="Foto quarto Standard">
+                    <div>
+                        <h3 class="title-1">QUARTO STANDARD</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                        <a href="#" class="button-second">DESCOBRIR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="controls-carousel-2">
             <div class="control-left">
@@ -201,7 +215,7 @@
 
 <!-- Conceito e Interiores -->
 <section class="conteito-interiores">
-    
+
 </section>
 <!-- Conceito e Interiores -->
     
